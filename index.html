@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+<style>
+    
+	 #content{
+	 
+		background-color: lightyellow;
+		align-items: center;
+		background: lightyellow;
+	}
+	
+  
+	
+	#form{
+		width:170px;
+		margin:auto;
+		background-color:#ffff;
+		padding:15px;
+		border-radius: 20px;
+		border: 10px solid #0000;
+	}
+	
+	#loginbtn{
+		margin: 10px;
+	}
+	
+</style>
+</head>
+<body>
+    
+    
+	<script>
+		function login(){
+		
+var correctUsername="Dave"; 
+var correctPassword="Monton";
+var typeUsername=document.getElementById("username").value;
+var typePassword=document.getElementById("password").value;
+
+if(correctUsername==typeUsername && correctPassword==typePassword){    
+	document.getElementById("notif").innerText="Login Successfully";
+}else{
+	document.getElementById("notif").innerText="Invalid username or password";
+	}
+}
+
+	</script>
+	<div id="content">
+		<div id="form">
+		     
+			<h4>Login</h4>
+			<br>
+			
+			<br>
+			<label> Enter Username </label>
+			<input type="text" id="username">
+			<label> Enter Password </label>
+			<input type="password" id="password">
+			<br>
+			<span id="notif"></span>
+			<button id="loginbtn" onclick="login()" style="background-color: green; color:#">Log In</button>
+
+
+
+</div>
+</div>
+</body>
+
+</html>
